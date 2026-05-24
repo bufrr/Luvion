@@ -33,11 +33,13 @@ and is available to qualified reviewers for technical review or audit.
 
 ## Repository contents
 
-- [`docs/architecture.md`](docs/architecture.md) — short architecture overview
+- [`docs/architecture.md`](docs/architecture.md) — short architecture overview, with layer status (implemented / planned)
+- [`docs/sui-architecture-detail.md`](docs/sui-architecture-detail.md) — public technical detail of the planned Sui integration: state machines, interfaces, risk register
 - [`docs/sui-integration-status.md`](docs/sui-integration-status.md) — current Sui integration stage and the 30–45 day validation plan
-- [`docs/demo-summary.md`](docs/demo-summary.md) — pointer to existing demo materials
-- [`docs/test-summary.md`](docs/test-summary.md) — current test status snapshot of the core implementation
+- [`docs/demo-summary.md`](docs/demo-summary.md) — public summary of what the existing demos cover, plus the access path for the demo report and videos
+- [`docs/test-summary.md`](docs/test-summary.md) — traceable snapshot of the core repository test state, with per-category integration test commands
 - [`docs/audit-scope.md`](docs/audit-scope.md) — audit scope and risk boundaries
+- [`docs/audit-readiness.md`](docs/audit-readiness.md) — public summary of audit readiness state per in-scope module
 
 ## Access and contact
 
