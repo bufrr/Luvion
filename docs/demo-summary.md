@@ -17,8 +17,8 @@ addresses, and specific numerical results stay out of the public record.
   share generation, node start, round1 commitment, round2 partial
   signature exchange, aggregate signature verification.
 - Round1 / round2 dispatch retry, idle-connection / cache TTL handling,
-  and per-session replay protection are exercised on the production
-  TCP cluster runtime, not on a mock transport.
+  and per-session replay protection are exercised on the real
+  (non-mock) TCP cluster runtime.
 - Output: aggregated signature byte string and a local Ed25519 / ML-DSA
   verification result.
 

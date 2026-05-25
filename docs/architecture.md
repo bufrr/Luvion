@@ -44,3 +44,14 @@ interfaces, and risk register, is in
 - [Sui integration status and 30–45 day validation plan](sui-integration-status.md)
 - [Audit scope and risk boundaries](audit-scope.md)
 - [Audit readiness — public summary](audit-readiness.md)
+
+## Original source documents
+
+The full internal source documents (Sui Integration Technical
+Architecture and Luvion Technical Summary, in PDF form) are not hosted
+in this repository because they contain internal maintenance metadata
+that is not suitable for public release. The PDFs themselves are
+available under the private review access process — see the
+[README contact section](../README.md#access-and-contact). The
+[sui-architecture-detail.md](sui-architecture-detail.md) document above
+is the public, sanitized derivative of the architecture PDF.

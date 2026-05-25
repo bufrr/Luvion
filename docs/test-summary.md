@@ -23,11 +23,12 @@ below.
 | Node connectivity / stdio framing | passing | `int_node_stdio_round12`, `int_node_stdio_ping` |
 | Network probe / ping-pong | passing | `int_node_stdio_ping::ping_pong_round_trip` |
 | `t0` prefetch path | passing | Covered inside `int_ceremony_22_of_33` and `int_cluster_sign_tcp` |
-| Idle connection handling / cache TTL | passing | `int_node_cache_ttl::round2_after_ttl_rejected`, `int_node_cache_ttl::round1_then_round2_succeeds` |
+| Idle connection handling / cache TTL | passing | `int_node_cache_ttl::round2_after_ttl_rejected` |
+| Round1 / Round2 framing happy path | passing | `int_node_stdio_round12::round1_then_round2_succeeds` |
 | Retry / timeout semantics | passing | `int_resilience_integration::partitioned_round_dispatch_marks_unreachable_nodes_and_triggers_view_change` |
-| View-change / coordinator failover | passing | `int_resilience_integration::authenticated_view_change_routes_quorum_and_rejects_stale_epoch` |
+| View-change / coordinator failover | passing | `int_resilience_integration::authenticated_view_change_routes_quorum_and_rejects_stale_epoch`, `int_resilience_integration::incremental_reshare_rejects_stale_epoch_and_finalizes_joiner_state` |
 | DKG end-to-end | passing | `int_dkg_e2e`, `int_gen_shares_e2e` |
-| Proactive reshare | passing | `int_proactive_reshare_e2e::incremental_reshare_rejects_stale_epoch_and_finalizes_joiner_state` |
+| Proactive reshare | passing | `int_proactive_reshare_e2e::proactive_reshare_rotates_committee_and_preserves_signing_key` |
 | Replay / nonce safety (threat) | passing | `threat_node_replay_rejected`, `threat_node_bad_participants`, `threat_share_distribution_adversarial` |
 | Libp2p runtime path | passing | `libp2p_runtime::*` module tests (feature-gated) |
 | Coordinator integration | passing | `int_coordinator_integration` |

@@ -35,14 +35,20 @@ module-level findings logs are shared under a private-access process.
 
 The following artifacts are maintained in the project's internal review
 pack and are shared with audit firms during scoping. Each carries its
-own commit identifier and date.
+own commit identifier and date. The PDFs themselves are not hosted in
+this public repository — they are released under the private review
+access process described below to keep internal maintenance metadata,
+operator identities, and module-level findings out of the public
+record. The
+[`audit-readiness.md`](audit-readiness.md) document is the public,
+sanitized derivative of the Security Audit Readiness Summary.
 
 | Artifact | Format | Subject |
 |---|---|---|
-| Security Audit Readiness Summary | PDF | Module-by-module readiness, identified risk areas, modules where external review is most valuable |
-| Architecture pack (system boundary, sequences, state machines, interface contracts, SLO and capacity) | Markdown set | Detailed engineering documentation underlying the audit scope |
-| Internal review reports | Markdown | Round-by-round internal findings and remediation status for each in-scope module |
-| Threat-test transcripts | Markdown | Per-test results for adversarial / replay / bad-participant scenarios |
+| Security Audit Readiness Summary | PDF (under private access) | Module-by-module readiness, identified risk areas, modules where external review is most valuable |
+| Architecture pack (system boundary, sequences, state machines, interface contracts, SLO and capacity) | Markdown set (under private access) | Detailed engineering documentation underlying the audit scope |
+| Internal review reports | Markdown (under private access) | Round-by-round internal findings and remediation status for each in-scope module |
+| Threat-test transcripts | Markdown (under private access) | Per-test results for adversarial / replay / bad-participant scenarios |
 
 ## Engagement model
 
