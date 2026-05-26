@@ -82,9 +82,8 @@ cargo clippy --all-targets -- -D warnings
 cargo fmt --check
 ```
 
-Specific numerical pass counts are intentionally omitted to avoid
-implying a fixed completion measure. Reviewers with core-repo access
-see the full per-test output.
+Full per-test output is omitted from this page; reviewers with
+core-repo access see the complete output.
 
 ## What this page does not claim
 

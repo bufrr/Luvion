@@ -51,9 +51,8 @@ The full internal source documents — Sui Integration Technical
 Architecture and Luvion Technical Summary, in PDF form — are released
 under the **private review access process**, not as direct downloads in
 this public repository. This is a deliberate choice: the PDFs in their
-current form contain internal maintenance metadata (pinned dependency
-versions, internal source paths, maintenance rules, export footers)
-that the public-repo policy excludes. The
+current form carry internal metadata and non-public review context that
+the public-repo policy excludes. The
 [sui-architecture-detail.md](sui-architecture-detail.md) document is
 the public, sanitized derivative of the architecture PDF and contains
 the same technical substance.
