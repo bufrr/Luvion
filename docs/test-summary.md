@@ -8,10 +8,11 @@ below.
 
 | Field | Value |
 |---|---|
-| Snapshot date | 2026-05-24 |
+| Snapshot date | 2026-05-26 |
 | Toolchain | `rustc 1.93.1` / `cargo 1.93.1` |
-| Internal commit identifier | shared with reviewers at access-grant time |
+| Internal commit identifier | This snapshot corresponds to the latest private-core commit at access-grant time; the exact commit hash is shared with reviewers when access is granted |
 | Test execution environment | Linux x86_64, single-host 33-node cluster |
+| Library suite result on snapshot date | `cargo test --lib -- --test-threads=1` reports `test result: ok. 228 passed; 0 failed; 0 ignored` |
 | Known failures | None as of the snapshot date |
 | Last open blocker | Closed prior to the snapshot date |
 

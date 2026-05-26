@@ -9,13 +9,17 @@ omitted.
 
 ## 1. Technical conclusion
 
-The near-term Sui integration uses **threshold Ed25519 / FROST as the
-account-auth compatibility path**. The current core implements 22-of-33
-threshold ML-DSA-65; Luvion keeps threshold ML-DSA as the long-term
-post-quantum migration layer and adds an Ed25519 / FROST
-transaction-signing backend on top of the existing orchestration, network
-envelope, VRF proof, and cluster runtime to stay compatible with Sui's
-current native transaction-auth mechanism.
+The near-term Sui integration targets **Sui's Ed25519
+account-signature path** using **threshold Ed25519 / FROST**. Sui
+supports multiple account-signature schemes (Ed25519, Secp256k1,
+Secp256r1, multisig, zkLogin, passkey — see
+[Sui transaction-auth signatures](https://docs.sui.io/concepts/cryptography/transaction-auth/signatures)).
+The current core implements 22-of-33 threshold ML-DSA-65; Luvion keeps
+threshold ML-DSA as the long-term post-quantum migration layer and adds
+an Ed25519 / FROST transaction-signing backend on top of the existing
+orchestration, network envelope, VRF proof, and cluster runtime to
+produce a standard Ed25519 signature accepted by Sui under that
+scheme.
 
 Sui account-auth compatibility route:
 

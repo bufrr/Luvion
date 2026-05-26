@@ -14,10 +14,11 @@ and is available to qualified reviewers for technical review or audit.
   DKG / key generation flows, nonce safety and retry semantics, and an
   authenticated TCP / P2P cluster runtime.
 - **Sui integration:** integration framework and architecture level. A
-  threshold Ed25519 / FROST adapter targeting Sui's current account
-  signing mechanism is the integration surface. Testnet-grade
-  validation is the next milestone — **this repository does not
-  represent a Sui testnet deployment**.
+  threshold Ed25519 / FROST adapter targeting Sui's **Ed25519
+  account-signature path** is the integration surface (Sui supports
+  several account-signature schemes; this work picks the Ed25519
+  path). Testnet-grade validation is the next milestone — **this
+  repository does not represent a Sui testnet deployment**.
 - **ML-DSA:** retained as the long-term post-quantum security route.
   Not abandoned.
 - **Move vault:** referenced as an application-layer asset control

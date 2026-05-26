@@ -11,11 +11,15 @@ custody system. There is **no official Sui Foundation affiliation**.
 
 ## Near-term path
 
-Sui's current account signing uses Ed25519. Luvion's near-term Sui
-integration uses threshold Ed25519 / FROST to remain compatible with
-that mechanism. ML-DSA is retained as Luvion's long-term post-quantum
-route and is not the Sui account signing mechanism. Sui does not
-natively support threshold ML-DSA account auth.
+Sui supports multiple account-signature schemes (Ed25519, Secp256k1,
+Secp256r1, multisig, zkLogin, passkey — see
+[Sui transaction-auth signatures](https://docs.sui.io/concepts/cryptography/transaction-auth/signatures)).
+This validation plan targets Sui's **Ed25519 account-signature path**.
+Luvion uses threshold Ed25519 / FROST to produce a standard Ed25519
+signature accepted by Sui under that scheme, while ML-DSA remains
+Luvion's long-term post-quantum route. ML-DSA is not the Sui account
+signing mechanism, and Sui does not natively support threshold ML-DSA
+account auth.
 
 ## 30–45 day validation plan
 

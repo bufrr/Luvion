@@ -47,11 +47,18 @@ interfaces, and risk register, is in
 
 ## Original source documents
 
-The full internal source documents (Sui Integration Technical
-Architecture and Luvion Technical Summary, in PDF form) are not hosted
-in this repository because they contain internal maintenance metadata
-that is not suitable for public release. The PDFs themselves are
-available under the private review access process — see the
-[README contact section](../README.md#access-and-contact). The
-[sui-architecture-detail.md](sui-architecture-detail.md) document above
-is the public, sanitized derivative of the architecture PDF.
+The full internal source documents — Sui Integration Technical
+Architecture and Luvion Technical Summary, in PDF form — are released
+under the **private review access process**, not as direct downloads in
+this public repository. This is a deliberate choice: the PDFs in their
+current form contain internal maintenance metadata (pinned dependency
+versions, internal source paths, maintenance rules, export footers)
+that the public-repo policy excludes. The
+[sui-architecture-detail.md](sui-architecture-detail.md) document is
+the public, sanitized derivative of the architecture PDF and contains
+the same technical substance.
+
+Reviewers who require the original PDFs in their unaltered form can
+request them through the
+[README contact path](../README.md#access-and-contact); they are
+delivered alongside core-repo access.
